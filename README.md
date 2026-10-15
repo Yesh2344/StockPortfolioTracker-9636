@@ -17,3 +17,5 @@ Features:
 - Fully typed Python code and documented JavaScript.
 
 ## Project Structure
+
+<!-- minor polish -->
