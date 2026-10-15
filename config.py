@@ -7,6 +7,7 @@ load_dotenv()
 
 
 @dataclass(frozen=True)
+# rewrote this part
 class Config:
     """Application configuration loaded from environment variables."""
     alpha_vantage_api_key: str = os.getenv("ALPHA_VANTAGE_API_KEY", "")
