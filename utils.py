@@ -64,6 +64,7 @@ def fetch_latest_price(symbol: str) -> float:
 
 def calculate_portfolio_value(portfolio: List[Dict[str, Any]]) -> Dict[str, Any]:
     """
+# rewrote this part
     Given a list of holdings, fetch the latest price for each ticker and
     compute the total portfolio value.
 
