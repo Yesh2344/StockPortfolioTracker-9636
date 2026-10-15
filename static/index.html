@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stock Portfolio Tracker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>📈 Stock Portfolio Tracker</h1>
+    </header>
+
+    <main>
+        <section id="portfolio-section">
+            <h2>Your Portfolio</h2>
+            <table id="portfolio-table">
+                <thead>
+                    <tr>
+                        <th>Ticker</th>
+                        <th>Shares</th>
+                        <th>Price (USD)</th>
+                        <th>Value (USD)</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Populated by JavaScript -->
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3"><strong>Total Value</strong></td>
+                        <td id="total-value">$0.00</td>
+                        <td></td>
+                    </tr>
+                </tfoot>
+            </table>
+
+            <form id="add-stock-form">
+                <input type="text" id="symbol-input" placeholder="Ticker (e.g., AAPL)" required>
+                <input type="number" id="shares-input" placeholder="Shares" min="1" required>
+                <button type="submit">Add Stock</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Data provided by <a href="https://www.alphavantage.co" target="_blank">Alpha Vantage</a>.</p>
+    </footer>
+
+    <script type="module" src="app.js"></script>
+</body>
+</html>

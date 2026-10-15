@@ -1,0 +1,96 @@
+/* Reset & base */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* Layout */
+header, footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* Table */
+#portfolio-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+#portfolio-table th,
+#portfolio-table td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+}
+
+#portfolio-table th {
+    background: #34495e;
+    color: #fff;
+    font-weight: 600;
+}
+
+#portfolio-table tbody tr:hover {
+    background: #f1f1f1;
+}
+
+/* Form */
+#add-stock-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+#add-stock-form input {
+    flex: 1 1 150px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#add-stock-form button {
+    padding: 0.5rem 1rem;
+    background: #27ae60;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#add-stock-form button:hover {
+    background: #219150;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    #portfolio-table th,
+    #portfolio-table td {
+        font-size: 0.9rem;
+    }
+
+    #add-stock-form {
+        flex-direction: column;
+    }
+}
