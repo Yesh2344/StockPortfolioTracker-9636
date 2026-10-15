@@ -53,6 +53,7 @@ def portfolio() -> Any:
 
 @app.errorhandler(400)
 def bad_request(error):
+# leaving a note for later
     """Custom JSON response for 400 errors."""
     response = jsonify({"error": error.description or "Bad request"})
     response.status_code = 400
